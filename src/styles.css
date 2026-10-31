@@ -844,7 +844,8 @@ body {
   color: var(--ink);
 }
 .topbar {
-    background:#231d1d;color:#fff
+  background: #231d1d;
+  color: #fff;
 }
 .topbar a {
   color: var(--gold);
@@ -1237,8 +1238,12 @@ footer .brand b {
     right: 12px;
     bottom: calc(76px + env(safe-area-inset-bottom, 0px));
   }
-  .item {
-    flex-wrap: wrap;
+  .item > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+  .row {
+    flex: none;
   }
   .ln {
     grid-template-columns: 1fr auto;
